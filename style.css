@@ -6,12 +6,88 @@ body {
   box-sizing: border-box;
 }
 
+.container {
+  width: 80%;
+  margin: auto;
+}
+
 /* <!-- hero section  --> */
+.hero {
+  height: 90vh;
+  position: relative;
+}
 .hero video {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+}
+
+.hero > div {
+  position: absolute;
+  top: 30vh;
+  left: 10vw;
+  background: rgba(0, 0, 0, 0.146);
+  color: white;
+  width: 450px;
+  padding: 1rem;
+  border-radius: 10px;
+  backdrop-filter: blur(20px);
+}
+
+.down {
+  font-size: 5rem;
+  color: orangered;
+  position: absolute;
+  bottom: 100px;
+  left: 50vw;
+  transform: rotate(90deg);
+  animation: arrow 2s linear infinite;
 }
 /* <!-- navbar --> */
+nav {
+  background: black;
+  color: rgb(211, 182, 19);
+}
+
+nav > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3rem;
+  padding: 0.5rem 0;
+}
+
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+  margin-left: 1.3rem;
+}
+
+nav ul li:hover {
+  color: red;
+  transform: scale(1.3);
+  cursor: pointer;
+  transition: all 0.5s;
+}
 /* <!-- paragraph --> */
 /* <!-- image section  --> */
 /* <!-- footer  --> */
+
+footer {
+  background: black;
+  color: wheat;
+  padding: 3rem;
+  text-align: center;
+}
+
+@keyframes arrow {
+  0% {
+    bottom: 100px;
+    left: 50vw;
+  }
+  100% {
+    bottom: 10px;
+  }
+}
