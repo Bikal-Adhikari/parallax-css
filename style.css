@@ -73,6 +73,45 @@ nav ul li:hover {
 }
 /* <!-- paragraph --> */
 /* <!-- image section  --> */
+/* .img1, .img2, .img3, .img4{ */
+[class^="img"] {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  background: rgba(0, 0, 0, 0.397);
+  color: white;
+  padding-top: 1.4rem 5rem;
+  border-radius: 10px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+
+.img1 {
+  background: url(./assets/image1.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.img2 {
+  background: url(./assets/image2.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.img3 {
+  background: url(./assets/image3.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.img4 {
+  background: url(./assets/image4.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
 /* <!-- footer  --> */
 
 footer {
